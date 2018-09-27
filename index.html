@@ -1,0 +1,33 @@
+<!DOCTYPE html5>
+    <head>
+        <title>Prototype 6: Riddhi Ray</title>   
+        <link rel="stylesheet" href="main.css">   
+        <script>
+         function stopRKey(evt) { 
+          var evt = (evt) ? evt : ((event) ? event : null); 
+          var node = (evt.target) ? evt.target : ((evt.srcElement) ? evt.srcElement : null); 
+          if ((evt.keyCode == 13) && (node.type=="text"))  {return false;} 
+          } 
+
+          document.onkeypress = stopRKey; 
+
+        </script>
+    </head>
+    <body>
+    <fieldset>
+        <form id = "fm" action="login.php">
+        <p>Hello</p>
+        <div id="user">
+        <input type=text autocomplete=off placeholder = "username" name="user" required>&nbspEnter User<br>
+        </div>
+        <div id="password">
+        <input type=text autocomplete=off placeholder = "password" name="password" required>&nbspPassword<br>
+        </div>
+        <div id="button">
+        <input type = submit>
+        </div>
+        </form>
+        <a href = "images.html">Images</a>
+    </fieldset>
+    </body>
+</html>
