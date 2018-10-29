@@ -1,6 +1,6 @@
 <!DOCTYPE html5>
     <head>
-        <title>Prototype 6: Riddhi Ray</title>   
+        <title>Prototype Register</title>   
         <link rel="stylesheet" href="main.css">   
         <script>
          function stopRKey(evt) { 
@@ -13,17 +13,19 @@
     </head>
     <body>
     <fieldset>
-        <form id = "fm" action="login.php">
-        <p>Welcome!</p>
+        <form id = "fm" action="register.php">
+        <p>Register</p>
+	<div id="email">
+        <input type=text autocomplete=off placeholder = "email" name="email" required>&nbspEnter Email<br>
+        </div>
         <div id="user">
         <input type=text autocomplete=off placeholder = "username" name="user" required>&nbspEnter User<br>
         </div>
         <div id="password">
-        <input type=password autocomplete=off placeholder = "password" name="password" required>&nbspPassword<br>
+        <input type=password  autocomplete=off placeholder = "password" name="password" required>&nbspPassword<br>
         </div>
         <div id="button">
-        <input type = submit value="Enter" ><br> <br> <br>
-	New User Register <a href="register.html">Here: </a>
+        <input type = submit value="Register">
         </div>
         </form>
     </fieldset>
